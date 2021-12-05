@@ -1,0 +1,4 @@
+.idea/
+
+# Ignore the dataset, it's to heavy
+*.csv
