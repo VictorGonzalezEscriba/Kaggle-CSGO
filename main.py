@@ -1,16 +1,18 @@
-# This is a sample Python script.
-
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import pandas as pd
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def load_dataset(path):
+    df = pd.read_csv(path, delimiter=',', engine='python')
+    return df
+
+# def clean_dataset(dataset):
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def main():
+    dataset = load_dataset('data/csgo_round_snapshots.csv')
+    # clean_dataset(dataset)
+    print(dataset)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+main()
+
+# https://www.kaggle.com/christianlillelund/csgo-round-winner-classification
