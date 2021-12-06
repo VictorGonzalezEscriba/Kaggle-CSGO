@@ -11,8 +11,8 @@ def load_dataset(path):
 def main():
     dataset = load_dataset('data/csgo_round_snapshots.csv')
     # clean_dataset(dataset)
-    print(dataset)
+    print(dataset.info)
 
 main()
 
-# https://www.kaggle.com/christianlillelund/csgo-round-winner-classification
+
