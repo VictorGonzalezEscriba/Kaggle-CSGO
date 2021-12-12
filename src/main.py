@@ -60,7 +60,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
 # LOGISTIC REGRESSION
 start1 = time.time()
 LR = LogisticRegression(max_iter=1000)
-param_grid1 = {'fit_intercept': [True, False]}
+param_grid1 = {'fit_intercept': [True, False], 'C': [10, 100]}
 
 # Utilitzo aquest optimitzador, vist a la documentació de Kaggle
 Optimizer1 = GridSearchCV(LR, param_grid1, cv=5)
