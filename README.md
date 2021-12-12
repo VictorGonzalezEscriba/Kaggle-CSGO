@@ -34,9 +34,9 @@ Per millorar el rendiment dels models, al fitxer "generate_features.py", s'ha ap
 Execucions fetes al notebook develop
 | Model | Hiperparametres | Accuracy | Temps |
 
-| LogisticRegressor | max_iter=1000, fit_intercept | 75 % | 15.04s |
+| LogisticRegressor | default i max_iter=1000, fit_intercept | 75 % | 15.04s |
 
-| DecisionTree | max_depth, min_samples_leaf | 81% | 29.4s |
+| DecisionTree | default i max_depth, min_samples_leaf | 81% | 29.4s |
 
 | KNN | n_neighbors=[5, 6, 7, 8] | 80 % | 4min |
 
