@@ -5,7 +5,7 @@
 ![alt text](images/Screenshot.png)
 
 ### Resum
-El dataset utilitza dades del videjoc CS:GO (Counter Strike Global Offensive). Es tracta
+El dataset utilitza dades del videojoc CS:GO (Counter Strike Global Offensive). Es tracta
 d'un videojoc first-person shooter. El joc consisteix en que l'equip T (Terrorist) ha de fer 
 explotar una bomba i l'equip CT (Counter Terrorist) ha d'evitar-ho.
 
