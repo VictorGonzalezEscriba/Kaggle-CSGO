@@ -22,6 +22,9 @@ en diferents paràmetres com la profunditat màxima en el decision tree i a més
 Aquesta estratègia d'utilitzar un optimitzador l'he vist en alguns exemples de codi al kaggle.
 
 ### Preprocessat
+Com es tracta d'un videojoc on l'informació sobre la vida dels jugadors, els diners o les armes són importants, no podem eliminar o modificar els missing values ("0.0").
+Si sustituïm els missing values per la mitjana, estariem alterant la partida. Per exemple, si es un mostra cap jugador utilitza una determinada arma i nosaltres modifiquem aquell valor per la mitjana, estem indicant que l'arma si ha estat utiltizada i això pot provocar que la classificació no sigui precisa. El mateix passaria si modifiquem els diners en una ronda inicial, l'armadura o la puntuació.
+
 Per millorar el rendiment dels models, al fitxer "generate_features.py", s'ha aplicat una neteja de dades:
 - Eliminem aquells atributs que tenen un únic valor.
 - A l'atribut objectiu "round_winner" canviem els valors de T i CT per 0 i 1 respectivament.
