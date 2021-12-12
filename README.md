@@ -43,7 +43,7 @@ Execucions fetes al notebook develop
 
 ### Demo 
 Per tal de fer una prova, podem executar la següent comanda: "python3.9 demo/demo.py"
-Aquesta prova és una execució amb només 100 mostres del dataset, permet veure una execució petita de tot el codi.
+Aquesta prova és una execució amb només 1000 mostres del dataset, permet veure una execució petita de tot el codi.
 
 !!! Si l'execució de la demo en IDE (no per terminal) no funciona, canviar la ruta de la linea 43 per
 '../data/csgo_round_snapshots.csv'. Aquesta comanda dona problemes i no he aconseguit solucionar-ho.
